@@ -86,6 +86,35 @@ const RichDeveloper: Developer<RichDeveloperModel> = {
 }
 console.log(RichDeveloper)
 
+//
+interface Box<T> {
+    item: T;
+    getItem: () => T;
+}
+const stringBox: Box<string> = {
+    item: "Book",
+    getItem: () => "Book"
+}
+
+// 
+type Pair<T, U> = {
+    first: T;
+    second: U;
+}
+const pair: Pair<string, number> = {
+    first: "Abdul",
+    second: 12
+}
+
+
+// generics with constraints
+interface HasId {
+    id: number;
+}
+const printId = <T extends HasId>(obj: T) => {
+    console.log(obj.id)
+}
+printId({id: 101, name: "Kala vai"})
 
 
 
@@ -147,3 +176,7 @@ const student2 = {
 }
 const result = addStudentToCourse(student2);
 console.log(result)
+
+
+
+

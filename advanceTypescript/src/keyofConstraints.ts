@@ -46,4 +46,4 @@ const result3 = getPropertyFromObj(student, "class");
 console.log(result3)
 
 
- 
+  
