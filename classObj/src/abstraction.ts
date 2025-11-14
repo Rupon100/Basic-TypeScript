@@ -62,3 +62,11 @@ const musicInstance = new RockMusic();
 musicInstance.play()
 
 
+
+
+
+
+
+
+
+
